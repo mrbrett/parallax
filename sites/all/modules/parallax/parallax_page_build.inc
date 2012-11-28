@@ -10,7 +10,7 @@ function parallax_display(){
 
 // Init vars
 
-$html = 'hello world';
+$html = 'stellar';
 
 
 return $html;
