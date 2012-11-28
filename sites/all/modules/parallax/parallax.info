@@ -1,0 +1,4 @@
+name = parallax Page
+description = parallax page and content
+core = 7.x
+package = parallax

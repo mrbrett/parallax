@@ -1,0 +1,25 @@
+<?php
+/**
+	* @file
+	* 	parallax page load
+	*/
+
+/**
+	*	Implements hook_menu()
+	*/
+	function parallax_menu(){
+
+	$items = array();
+	
+	// Contact Page
+	$items['parallax'] = array(
+		'title' => t('parallax'),
+		'page callback' => 'parallax_display',
+		'access arguments' => array('access content'),
+		'file' => 'parallax_page_build.inc',
+		'type' => MENU_CALLBACK,
+	);
+	
+	return $items;
+	
+}
