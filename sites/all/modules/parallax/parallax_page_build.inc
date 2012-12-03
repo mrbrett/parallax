@@ -17,40 +17,43 @@ $changing_parallax_var = '.8';
 
 
 // Adding javascript
-$js_path = "$module_path/js/jquery.scrollpath.min.js";
+$js_path = "$module_path/js/jquery.superscrollorama.js";
 drupal_add_js($js_path, array('scope' => 'footer','weight' => 1));
-$js_path = "$module_path/js/init.js";
+$js_path = "$module_path/js/TweenMax.min.js";
 drupal_add_js($js_path, array('scope' => 'footer','weight' => 2));
+$js_path = "$module_path/js/init.js";
+drupal_add_js($js_path, array('scope' => 'footer','weight' => 3));
 
 
 $html .= "
 	<div class = \"wrapper\">
 		<div class=\"first_words\">
 			<h2>Testing out this js plug!</h2>
-			<span class=\"words_wrap\">kinda like a thug -.-</span>
+			<span id=\"fade-it\">kinda like a thug -.- </span>
 		</div>
 
-		<div class=\"scrollbar\">
+		<div id=\"fly-it\">
 			<span class=\"words_wrap\">blah blah blah</span>
 		</div>
 
-		<div class=\"rotations\">
+		<div id=\"spin-it\">
 			<span class=\"words_wrap\">what the heck...</span>
-			<span class=\"upside_down words_wrap\">is happening?</span>
+		</div>
+		<div id=\"examples-pin\">
+				<div id=\"pin-frame-pin\" class=\"pin-frame\"><h2>Pin It</h2></div>
+			<div id=\"pin-frame-slide\" class=\"pin-frame\"><h2>Slide It</h2></div>
+			<div id=\"pin-frame-wipe\" class=\"pin-frame\"><h2>Wipe It</h2></div>
+			<div id=\"pin-frame-bounce\" class=\"pin-frame\"><h2>Bounce It</h2></div>
+			<div id=\"pin-frame-color\" class=\"pin-frame\"><h2>Color It</h2></div>
+			<div id=\"pin-frame-unpin\" class=\"pin-frame\"><h2>Unpin It</h2></div>
 		</div>
 
-		<div class=\"source\">
+		<div id=\"scale-it\">
 			<span class=\"words_wrap\">SOME MORE WORDS.</span>
 		</div>
 
-		<div class=\"follow\">
+		<div id=\"smush-it\">
 			<span class=\"words_wrap\">LAST STUFF FOR THIS DEMO</span>
-		</div>
-
-		<div class = \"background_one\">
-		</div>
-
-		<div class = \"space_wrap\">
 		</div>
 	</div>
 		";
